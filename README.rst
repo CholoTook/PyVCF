@@ -14,7 +14,7 @@ There main interface is the class: ``Reader``.  It takes a file-like
 object and acts as a reader::
 
     >>> import vcf
-    >>> vcf_reader = vcf.Reader(open('vcf/test/example-4.0.vcf', 'r'))
+    >>> vcf_reader = vcf.Reader(filename='vcf/test/example-4.0.vcf'))
     >>> for record in vcf_reader:
     ...     print record
     Record(CHROM=20, POS=14370, REF=G, ALT=[A])
